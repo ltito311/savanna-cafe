@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Savanna Cafe - Cart</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --green: #4CAF50;
+        --white: #FFFFFF;
+        --wood-brown: #8B5E3C;
+      }
+      .bg-wood {
+        background-color: var(--wood-brown);
+      }
+      .text-wood {
+        color: var(--wood-brown);
+      }
+      .border-wood {
+        border-color: var(--wood-brown);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[#F9F6F3]">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+<div class="flex-grow">
+<header class="flex items-center p-4 pb-2 justify-between sticky top-0 bg-[#F9F6F3] z-10">
+<a href="menu.html" class="text-wood flex size-10 shrink-0 items-center justify-center rounded-full bg-white shadow-md">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</a>
+<h1 class="text-wood text-xl font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-10">Your Order</h1>
+</header>
+<main class="p-4 space-y-6">
+<section>
+<h2 class="text-wood text-lg font-bold leading-tight tracking-[-0.015em] mb-4">Items</h2>
+<div class="space-y-4">
+<div class="flex items-center gap-4 bg-white p-3 rounded-xl shadow-sm">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-16" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD10y6UYJNtGevocxya3z1o_4Ui6kvzUmk9gatAeTE0Gw0aunflAgwAWEUj0sBGRjDGQkV05k17zs0v880d-tFSE7VrwrVY-IzvgeYf_q3shTBVK_BcIPg4itq3tedUaUf3cShr5JH9B1XzhF4cCsV4euJXN2s8cOcM9OkzayilvRefucKZrDJJeB8ZE7ZEAcwldmx39VJ4N7tQ-Ma8HxYE3b3Xr3UacIJp5WhWYe-iE8u3JyjqKT-4ZltFxFSXnoZILcz5IL0MLMU");'></div>
+<div class="flex-grow">
+<p class="text-wood text-base font-bold">Cappuccino</p>
+<p class="text-gray-500 text-sm">$4.50</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-base font-medium flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200">-</button>
+<span class="text-base font-bold w-4 text-center text-wood">1</span>
+<button class="text-base font-medium flex h-8 w-8 items-center justify-center rounded-full bg-[var(--green)] text-white hover:bg-opacity-90">+</button>
+</div>
+<button class="text-gray-400 hover:text-red-500">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8v144a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM192,208H64V64H192Z"></path></svg>
+</button>
+</div>
+<div class="flex items-center gap-4 bg-white p-3 rounded-xl shadow-sm">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-16" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCpTeP4XIt6SPO55KRPAGUV1BwqHUd1oK6NFB_TcuYU_AvQwCaMbXk6vXVr9o-_h132ClnLBsBmdISOgO80N5_FpuOLGhPjI99_gNCS85yH9F4L7oAX7WeTF0UFQQYH4jGK1Ns-_LmzQFhDFwTFTGGN7n8v8kc8E1wHT2IRY8_BDgR0qfXpon9im2WWt7o3WL3zzW-6Py22bVmyG2kOcRibT5XhX_JvKBCyCahdCNN0mBKIq-WOEW95cE5vG92qMmbN1S9ahvUY__o");'></div>
+<div class="flex-grow">
+<p class="text-wood text-base font-bold">Latte</p>
+<p class="text-gray-500 text-sm">$3.75</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-base font-medium flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200">-</button>
+<span class="text-base font-bold w-4 text-center text-wood">2</span>
+<button class="text-base font-medium flex h-8 w-8 items-center justify-center rounded-full bg-[var(--green)] text-white hover:bg-opacity-90">+</button>
+</div>
+<button class="text-gray-400 hover:text-red-500">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8v144a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM192,208H64V64H192Z"></path></svg>
+</button>
+</div>
+<div class="flex items-center gap-4 bg-white p-3 rounded-xl shadow-sm">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-16" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCsOIoUMsZ0aFXyKoPMu4YHXHluqcnaV6WZull1SWDtGbcU3r1C2pYY486nR12awjFVQ38V-_yBo3FlIUb8SvZltmWN9YCWkZNBQkuBEP1yDS-HpLK8MElbtwY9H_Flxl2paSNSKxccACa0VpRuVtdNrHP5OCh86bQvpYolpqFlk1cHcg6dq_jhZv_M7dbW5S0KErBlUG91j6y6gdA1-Lsty_F4DMCQ0NTP6gkFWXuYrzvGI_NMv6CK3rWry8hbgYXwImZ9tFTg-h0");'></div>
+<div class="flex-grow">
+<p class="text-wood text-base font-bold">Croissant</p>
+<p class="text-gray-500 text-sm">$2.25</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-base font-medium flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200">-</button>
+<span class="text-base font-bold w-4 text-center text-wood">1</span>
+<button class="text-base font-medium flex h-8 w-8 items-center justify-center rounded-full bg-[var(--green)] text-white hover:bg-opacity-90">+</button>
+</div>
+<button class="text-gray-400 hover:text-red-500">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8v144a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM192,208H64V64H192Z"></path></svg>
+</button>
+</div>
+</div>
+</section>
+<section class="bg-white p-4 rounded-xl shadow-sm space-y-3">
+<h2 class="text-wood text-lg font-bold leading-tight tracking-[-0.015em]">Order Summary</h2>
+<div class="space-y-2">
+<div class="flex justify-between">
+<p class="text-gray-500">Subtotal</p>
+<p class="text-wood font-medium">$14.25</p>
+</div>
+<div class="flex justify-between">
+<p class="text-gray-500">Tax</p>
+<p class="text-wood font-medium">$1.14</p>
+</div>
+<div class="flex justify-between">
+<p class="text-gray-500">Discount</p>
+<p class="text-green-600 font-medium">-$0.50</p>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-wood focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--green)] border-gray-200 bg-gray-50 h-12 placeholder:text-gray-400 p-3 text-base" placeholder="Promo Code" value=""/>
+<button class="bg-wood text-white px-4 py-2.5 rounded-lg text-sm font-bold h-12 hover:opacity-90">Apply</button>
+</div>
+</section>
+<section class="bg-white p-4 rounded-xl shadow-sm">
+<h2 class="text-wood text-lg font-bold leading-tight tracking-[-0.015em] mb-4">Pickup Time</h2>
+<div class="flex space-x-2">
+<button class="flex-1 py-2 text-center rounded-lg text-sm font-semibold bg-[var(--green)] text-white shadow-sm">As Soon As Possible</button>
+<button class="flex-1 py-2 text-center rounded-lg text-sm font-semibold bg-gray-100 text-wood">Schedule</button>
+</div>
+</section>
+<section>
+<h2 class="text-wood text-lg font-bold leading-tight tracking-[-0.015em] mb-4">Share</h2>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-3 bg-white p-3 rounded-xl shadow-sm hover:bg-gray-50">
+<div class="bg-green-100 rounded-full p-2">
+<svg class="text-[var(--green)]" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm40,120a40,40,0,0,1-40,40,88.1,88.1,0,0,1-88-88,40,40,0,0,1,40-40,8,8,0,0,1,7.58,6.84l16,32a8,8,0,0,1-1.5,8.5l-9.8,14.69a16,16,0,0,0,16,16l14.69-9.8a8.5,8.5,0,0,1,8.5-1.5l32,16A8,8,0,0,1,168,144Z"></path>
+</svg>
+</div>
+<span class="text-wood font-semibold">WhatsApp</span>
+</button>
+<button class="flex items-center justify-center gap-3 bg-white p-3 rounded-xl shadow-sm hover:bg-gray-50">
+<div class="bg-blue-100 rounded-full p-2">
+<svg class="text-blue-500" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M216,48H40a16,16,0,0,0-16,16V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V64A16,16,0,0,0,216,48ZM96,128a12,12,0,1,1,12,12A12,12,0,0,1,96,128Zm44,12a12,12,0,1,1,12-12A12,12,0,0,1,140,140Zm44-12a12,12,0,1,1,12,12A12,12,0,0,1,184,128Z"></path>
+</svg>
+</div>
+<span class="text-wood font-semibold">SMS</span>
+</button>
+</div>
+</section>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-white shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
+<div class="p-4">
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 bg-[var(--green)] text-white text-lg font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 shadow-lg shadow-green-500/30">
+<span class="truncate">Confirm Order - $14.89</span>
+</button>
+</div>
+</footer>
+</div>
+
+</body></html>
