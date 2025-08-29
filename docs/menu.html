@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --green: #4CAF50;
+        --white: #FFFFFF;
+        --wood-brown: #8B5E3C;
+      }
+      .bg-wood-brown { background-color: var(--wood-brown); }
+      .text-wood-brown { color: var(--wood-brown); }
+      .border-wood-brown { border-color: var(--wood-brown); }
+      .bg-green { background-color: var(--green); }
+      .text-green { color: var(--green); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[#FAF8F7]">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+<div class="flex-grow">
+<header class="sticky top-0 z-10 bg-white/80 backdrop-blur-sm">
+<div class="flex items-center p-4 pb-2 justify-between">
+<a href="index.html" class="text-wood-brown flex size-10 shrink-0 items-center justify-center rounded-full bg-white shadow-sm">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</a>
+<h1 class="text-wood-brown text-xl font-bold leading-tight tracking-tight flex-1 text-center pr-10">Menu</h1>
+</div>
+</header>
+<main class="pb-28">
+<section class="py-5">
+<h2 class="text-wood-brown text-2xl font-bold leading-tight tracking-tight px-4 pb-3">Featured</h2>
+<div class="flex overflow-x-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden pl-4 pr-1 gap-4">
+<div class="flex flex-col gap-3 rounded-xl min-w-52 bg-white p-3 shadow-sm">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1ZO9MDiEHeWCtySWj-5EAk4K27TXXIKpUem-XQljiDVRboSWW3qRZ1E-h_-WEoG-Z-JzjR9lLBk5aOnUuUnWaWkOMgVsnIRp0ywtxArso_xa2N0WrhpuyK2FQqFj2ujr0egxd-qLzSORHUkpvoMmeoZMfeCKyg2CNmM3uLZ_eDXXmCv57fO5-r-OH7Hq05DXi-42cGnMoMJrP7XoC5kEfmr7mWrrA7vJprd5Lxmk9Fu5aTUUD-bDVwOfdeaXRCSxz7hLwrlUsM2M");'></div>
+<div>
+<p class="text-wood-brown text-base font-bold">Morning Brew</p>
+<p class="text-stone-500 text-sm font-normal">Start your day right.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl min-w-52 bg-white p-3 shadow-sm">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDkNp7Lq4nJSEzmP_phhhNOgg1B1n56q4uouGecNG8D9XtWY2rfdG4xf4IqAgtlKm0nYIsjtXPMRQu6nEU6sumTzc6G9gVkMk70LVFcq5W7DVHekccat6UYtxqn7oMxZYCvQg4zRfJDznCGeFRaIhyS7HmYNP37SWkYFznWVtCze9BOjFDvgZoSBwWqUOQ3rQaWZZ2mBpe4Su9KeKc3ZNYk58hphz622OkuJfMPBJcwvQEqkyb7Mle4aqQ_cKiaGxyZrt3dQbOUYZo");'></div>
+<div>
+<p class="text-wood-brown text-base font-bold">Sweet Treats</p>
+<p class="text-stone-500 text-sm font-normal">Freshly baked pastries.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl min-w-52 bg-white p-3 shadow-sm">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBLvjlQGk6TofI-5hp0jfUjFJWI2t3-T2Z7WGEkGAS6NiDYn4SARb3gFq4pDgyAYA_M-LkvP-iVZBFeNKel1FwPzBiA0A1CxxeF2eje33kc7JVTT3UtRISIvfEslfsHEea91VSCKlfd63KKmS9WNtvkrWGQdtax3EYvF1TmjBF3Zsu-f_0rYCagVkqUniSJ_lc4sKDj4mhzrdTrucs-jkhs-67GjP-U6PLNmXn1CabXoiVzC-ZWknwS35P4Nx93gO_38ud_H9CMAVE");'></div>
+<div>
+<p class="text-wood-brown text-base font-bold">Savory Bites</p>
+<p class="text-stone-500 text-sm font-normal">Gourmet sandwiches.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="px-4 py-5 space-y-4">
+<h2 class="text-wood-brown text-2xl font-bold leading-tight tracking-tight">Full Menu</h2>
+<div class="bg-white p-4 rounded-xl shadow-sm flex items-center gap-4">
+<img alt="Classic Espresso" class="w-24 h-24 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEPF8SK1G5_lJd_hkc8r3FwmLgu74NgM3PwVCfvQpWXBvN_dmzl5GIT1aSMpkPH_ULqlDRHdu7drfUu7mI2yqudlGkn4lKuVtkDgDTaF9oCR6sUaXi4997bQFpeo3N8Mr7TxxTwUImWnKJz5OJUN6u9awATLSs2detMkkzi9EH5po5CHWy0kcwQWTUDsjLmIuIQDyJbfwJIKcMz_tKLraXDLYOU_2HKDf3V4Yj8ts1gSLq9zyjiuPYtzq8pXFqDAt3TGaErWtwYUM"/>
+<div class="flex-grow">
+<p class="text-wood-brown text-lg font-bold">Classic Espresso</p>
+<p class="text-stone-500 text-sm mb-2">Rich, full-bodied espresso shot.</p>
+<div class="flex justify-between items-center">
+<p class="text-wood-brown font-bold">$2.50</p>
+<button class="flex items-center justify-center size-8 rounded-full bg-green text-white">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg>
+</button>
+</div>
+</div>
+</div>
+<div class="bg-white p-4 rounded-xl shadow-sm flex items-center gap-4">
+<img alt="Creamy Latte" class="w-24 h-24 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeK5AqQteWQL0NvQ6jPtuKXb9Bu4KI9zsrhZOaezUa_0PsPW9JXNjTFcQ-KzTGmzZbMXh9Z_3_ANFNsXUHIoVf54h_XGIJuDyrsoGhYd2cBm0s1cphK7l3Ua7rwFq4SkZxwWNlw4A-zit5th1i5a2GS0lKD102wrBJnR6qKgxKUC45S9lGCFd70vpFa4aOGRKyUSH8RICPOEeKajDe9XWEUso1z6ZRfacelqX8bjUJxcCMLtNB8Lr9u7iVuAzfMc1jGk1NWRnqMv4"/>
+<div class="flex-grow">
+<p class="text-wood-brown text-lg font-bold">Creamy Latte</p>
+<p class="text-stone-500 text-sm mb-2">Espresso with steamed milk.</p>
+<div class="flex justify-between items-center">
+<p class="text-wood-brown font-bold">$3.50</p>
+<button class="flex items-center justify-center size-8 rounded-full bg-green text-white">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg>
+</button>
+</div>
+</div>
+</div>
+<div class="bg-white p-4 rounded-xl shadow-sm flex items-center gap-4">
+<img alt="Frothy Cappuccino" class="w-24 h-24 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbYxvpvU7EOwR7FevxHcbLk9PO-RhB3D5FGpLV4rI_053DvLk1NJfY3fZvhKw9cnrotExT-ZY5hFPjsKeD6LkC-o0GdqEBY4ryFHkHMoJkZeSkyq8nf3K_muPzgihaZVHJFr0Lph458yx3DnDI1JfqfIjf-rTfOIVVy2m5Zj0awSfBtLWMsL4XmAGt_cWsWOJOlfqOdXGY6bDTZmMc3zwDuwqx9Vv2hsk7E-Nj80TQFNC3p3LV4Jp9Ce0O8U8eIlQXvjFCN_nNm4k"/>
+<div class="flex-grow">
+<p class="text-wood-brown text-lg font-bold">Frothy Cappuccino</p>
+<p class="text-stone-500 text-sm mb-2">Espresso, milk, and foam.</p>
+<div class="flex justify-between items-center">
+<p class="text-wood-brown font-bold">$3.75</p>
+<button class="flex items-center justify-center size-8 rounded-full bg-green text-white">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg>
+</button>
+</div>
+</div>
+</div>
+<div class="bg-white p-4 rounded-xl shadow-sm flex items-center gap-4">
+<img alt="Blueberry Muffin" class="w-24 h-24 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDrc0h4jKp2iSwQ4oEQtUyLSLdEzXgVBTgVLuevUQGzjWE7rINE4N9HA1QHkUp2gbLCiXS6VSRefkICO9cjtGRTIVpkvzQMCXZIsMYuj1acAT4XF90pQS15QTllD_Xnt3gcIg3p2o2fra5UQWPiiH5wNpVHJsB5g2f3N_2U4rvu43ESEGPHMhYB0U909kJauwQS4jDf-dZ8mxFNd-g_D47_LVD5XC9CcptCDo9B_Vb91vFlf9LatQJHu1_3l2WmblCAl1n2-G0Wzo"/>
+<div class="flex-grow">
+<p class="text-wood-brown text-lg font-bold">Blueberry Muffin</p>
+<p class="text-stone-500 text-sm mb-2">Freshly baked with juicy blueberries.</p>
+<div class="flex justify-between items-center">
+<p class="text-wood-brown font-bold">$2.00</p>
+<button class="flex items-center justify-center size-8 rounded-full bg-green text-white">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+<footer class="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-sm border-t border-stone-200">
+<div class="flex justify-around py-2 px-4">
+<a class="flex flex-col items-center justify-end gap-1 text-stone-500" href="#">
+<div class="flex h-8 items-center justify-center">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"></path>
+</svg>
+</div>
+<p class="text-xs font-medium tracking-wide">Home</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 rounded-full text-green" href="#">
+<div class="flex h-8 items-center justify-center">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,120v16a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V120a8,8,0,0,1,8-8H216A8,8,0,0,1,224,120Zm-8,56H40a8,8,0,0,0-8,8v16a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V184A8,8,0,0,0,216,176Zm0-128H40a8,8,0,0,0-8,8V72a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V56A8,8,0,0,0,216,48Z"></path>
+</svg>
+</div>
+<p class="text-xs font-bold tracking-wide">Menu</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-stone-500" href="#">
+<div class="flex h-8 items-center justify-center">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M222.14,58.87A8,8,0,0,0,216,56H54.68L49.79,29.14A16,16,0,0,0,34.05,16H16a8,8,0,0,0,0,16h18L59.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,152,204a28,28,0,1,0,28-28H83.17a8,8,0,0,1-7.87-6.57L72.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,222.14,58.87ZM96,204a12,12,0,1,1-12-12A12,12,0,0,1,96,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,192,204Zm4-74.57A8,8,0,0,1,188.1,136H69.22L57.59,72H206.41Z"></path>
+</svg>
+</div>
+<p class="text-xs font-medium tracking-wide">Cart</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-stone-500" href="#">
+<div class="flex h-8 items-center justify-center">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"></path>
+</svg>
+</div>
+<p class="text-xs font-medium tracking-wide">Loyalty</p>
+</a>
+</div>
+<div class="h-3"></div>
+</footer>
+</div>
+
+</body></html>
