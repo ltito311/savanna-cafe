@@ -9,6 +9,7 @@ import {
   type DeptId,
   type DeptRuntime,
 } from "@/lib/departments";
+import { playSound } from "@/lib/sounds";
 
 // The 3D scene needs a real browser (WebGL), so it's loaded client-side only.
 const Store3D = dynamic(() => import("@/components/Store3D"), {
@@ -31,10 +32,12 @@ export default function Home() {
   const [selectedDepartment, setSelectedDepartment] = useState<DeptId | null>(
     null,
   );
+  const [hintVisible, setHintVisible] = useState(true);
 
   // Customers hand over money when they finish checkout.
   const earn = useCallback((amount: number) => {
     setMoney((m) => m + amount);
+    playSound("cash", 0.35, 250);
   }, []);
 
   // Managers keep auto-selling once a second in every department that has one.
@@ -79,18 +82,23 @@ export default function Home() {
     if (!state.unlocked && money >= config.unlockCost) {
       setMoney((m) => m - config.unlockCost);
       setDepts((ds) => ({ ...ds, [id]: { ...ds[id], unlocked: true } }));
+      playSound("coin");
+    } else {
+      playSound("click");
     }
     setSelectedDepartment(id);
   };
 
   const sell = (id: DeptId) => {
     setMoney((m) => m + depts[id].rate);
+    playSound("click", 0.4);
   };
 
   const buyUpgrade = (id: DeptId) => {
     const s = depts[id];
     if (money < s.upgradeCost) return;
     const config = DEPARTMENTS.find((d) => d.id === id)!;
+    playSound("coin");
     setMoney((m) => m - s.upgradeCost);
     setDepts((ds) => ({
       ...ds,
@@ -106,6 +114,7 @@ export default function Home() {
   const hireManager = (id: DeptId) => {
     const config = DEPARTMENTS.find((d) => d.id === id)!;
     if (depts[id].hasManager || money < config.managerCost) return;
+    playSound("coin");
     setMoney((m) => m - config.managerCost);
     setDepts((ds) => ({ ...ds, [id]: { ...ds[id], hasManager: true } }));
   };
@@ -122,7 +131,10 @@ export default function Home() {
   const selectedState = selectedDepartment ? depts[selectedDepartment] : null;
 
   return (
-    <div className="relative h-dvh w-full overflow-hidden">
+    <div
+      className="relative h-dvh w-full overflow-hidden"
+      onPointerDown={() => setHintVisible(false)}
+    >
       {/* 3D store view fills the screen */}
       <div className="absolute inset-0">
         <Store3D
@@ -151,10 +163,10 @@ export default function Home() {
         </p>
       </header>
 
-      {/* Hint shown until the player opens a department panel */}
-      {!selectedDepartment && (
-        <p className="pointer-events-none absolute inset-x-0 bottom-8 z-10 animate-bounce text-center text-base font-semibold text-amber-900/70">
-          👇 Tap a crate to manage that department
+      {/* One-time tip; disappears at the first touch */}
+      {hintVisible && (
+        <p className="pointer-events-none absolute inset-x-4 bottom-8 z-10 mx-auto w-fit rounded-full bg-white/85 px-4 py-2 text-center text-sm font-semibold text-amber-900 shadow-md backdrop-blur">
+          ☝️ Drag to move · Pinch to zoom · Tap a department to manage it
         </p>
       )}
 

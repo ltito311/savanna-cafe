@@ -8,6 +8,7 @@ export type DeptConfig = {
   name: string;
   emoji: string;
   color: string;
+  model: string; // GLB file in public/assets/models/minimarket
   position: [number, number, number];
   unlockCost: number; // 0 = available from the start
   startRate: number; // $/sec when first unlocked
@@ -24,6 +25,7 @@ export const DEPARTMENTS: DeptConfig[] = [
     name: "Produce Section",
     emoji: "🥕",
     color: "#4ade80",
+    model: "display-fruit.glb",
     position: [-4, 0, -3],
     unlockCost: 0,
     startRate: 1,
@@ -36,6 +38,7 @@ export const DEPARTMENTS: DeptConfig[] = [
     name: "Canned Food",
     emoji: "🥫",
     color: "#fbbf24",
+    model: "shelf-boxes.glb",
     position: [0, 0, -4.5],
     unlockCost: 250,
     startRate: 2,
@@ -48,6 +51,7 @@ export const DEPARTMENTS: DeptConfig[] = [
     name: "Bakery",
     emoji: "🥐",
     color: "#f472b6",
+    model: "display-bread.glb",
     position: [4, 0, -3],
     unlockCost: 1000,
     startRate: 5,
