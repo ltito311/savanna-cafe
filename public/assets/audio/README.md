@@ -1,11 +1,12 @@
 # Sound effects (Kenney, CC0)
 
-UI/game audio goes in this folder. Planned contents:
+From Kenney's Casino Audio pack, renamed by purpose:
 
-- A button click sound (from Kenney "UI Audio" / "Interface Sounds")
-- A coin / cash-register sound for checkout payments (from Kenney
-  "Casino Audio" or similar)
+- `click.ogg` — button/tap sound (card-place-1.ogg)
+- `cash.ogg` — customer payment sound (chips-handle-1.ogg)
+- `coin-stack.ogg` — upgrade/purchase sound (chips-stack-2.ogg)
 
-Prefer .ogg or .mp3 (small); .wav is fine too — we can convert here.
+Note: no literal cash-register bell exists in this pack; chip sounds
+stand in for money. Swap in Kenney "Interface Sounds" later if wanted.
 
 License: all Kenney assets are CC0 (public domain) — https://kenney.nl

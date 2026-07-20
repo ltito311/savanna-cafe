@@ -1,16 +1,12 @@
 # 3D models (Kenney, CC0)
 
-GLB/GLTF model files for the store go in this folder.
+GLB models extracted from Kenney's kits (GLB format only; FBX/OBJ
+variants were not imported). See FILELIST.md for every filename.
 
-Planned contents (not yet downloaded — kenney.nl is unreachable from the
-dev sandbox; files arrive via chat upload or a network-policy change):
-
-- **Furniture Kit** — shelves, counters, fridges → department fixtures
-- **Food Kit** — grocery items → products on shelves
-- **Mini Characters** (or Blocky Characters) — shopper figures → customers
-
-Convention once files land: one subfolder per kit, e.g.
-`furniture/`, `food/`, `characters/`, keeping Kenney's original
-filenames so they're easy to look up in Kenney's previews.
+- `minimarket/` — Mini Market kit (20): shelves, freezers, cash register,
+  displays, shopping carts, walls, floor — the store itself
+- `food/` — Food Kit (200): individual grocery/food items
+- `characters/` — Mini Characters (26): stylized shopper figures
+- `characters-blocky/` — Blocky Characters (18): alternative figure style
 
 License: all Kenney assets are CC0 (public domain) — https://kenney.nl
